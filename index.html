@@ -12,21 +12,295 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/jQuery-3.7.0.min.js"></script>
     <script src="./js/index.js"></script>
+
+    <script src="./js/jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="./css/jquery.fullpage.css" />
+
     <title>Yunju's Portfolio</title>
   </head>
   <body>
     <div id="wrap">
+      <!-- --------- header (S) ---------- -->
       <header>
-        <div class="inner">
-          <h1>YunJu</h1>
+        <div class="head_wrap">
+          <div class="inner">
+            <h1>
+              <a href="#"> YunJu </a>
+            </h1>
+            <ul>
+              <li>About</li>
+              <li>Skills</li>
+              <li>Project</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
       </header>
+      <!-- --------- header (E) ---------- -->
+      <!-- --------- main (S) ---------- -->
       <main>
-        <div class="inner"></div>
+        <div id="fullpage">
+          <!-- ---- home (S) ---- -->
+          <div class="section home">
+            <div class="inner">
+              <h2>
+                <span>Welcome to my</span>
+                <strong>Portfolio.</strong>
+                <span class="name">Shin Yun Ju</span>
+              </h2>
+              <div class="txt_box">
+                <p>
+                  안녕하세요. 신입 웹퍼블리셔 신윤주입니다.<br />이 포트폴리오를
+                  통해 제 웹 개발 능력과 노력의 흔적을 상세히 엿볼 수
+                  있습니다.<br />
+                  코드의 품질과 웹 표준, 웹 접근성에 얼마나 신경을 썼는지
+                  자세하게 확인하실 수 있습니다.
+                </p>
+                <p>
+                  지속적인 학습과 성장을 위해 노력하며, 다양한 기술 스택과
+                  도구를 활용하여 웹 개발 분야에서의 전문성을 높이기 위해
+                  노력해왔습니다.<br />
+                  이로써 미래에도 더욱 풍부한 경험과 실력을 발전시켜, 높은
+                  수준의 웹 개발 서비스를 제공할 자신이 있습니다.
+                </p>
+              </div>
+            </div>
+            <span class="scroll_down"></span>
+          </div>
+          <!-- ---- home (E) ---- -->
+          <!-- ---- about (S) ---- -->
+          <div class="section about">
+            <h3>About me</h3>
+            <div class="about_box">
+              <div class="img_wrap"></div>
+              <div class="right">
+                <strong>
+                  안녕하세요! <br />
+                  신입 웹퍼블리셔 신윤주입니다.🙇‍♀️
+                </strong>
+                <p>
+                  <span>HTML, CSS, JavaScript를 중심</span>으로 웹 퍼블리싱의
+                  기초를 다졌고, 실제 프로젝트를 통해 문제를 해결하는 능력과
+                  끊임없는 <span>학습에 대한 열정</span>을 길렀습니다.
+                </p>
+                <p>
+                  저는 항상 협업과 유지보수에 효과적인 코드를 작성하기 위해
+                  <span>꾸준한 공부와 자기개발</span>에 힘쓰고 있습니다.
+                </p>
+                <p>
+                  앞으로도 새로운 도전을 통해 더 나은 코드를 작성하고, 팀과 함께
+                  성장하며 프로젝트의 성공에 기여하고자 합니다.
+                </p>
+                <p>제 포트폴리오에 방문해 주셔서 감사합니다.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---- about (E) ---- -->
+          <!-- ---- skills (S) ---- -->
+          <div class="section skills">
+            <div class="inner">
+              <h3>Skills</h3>
+              <ul>
+                <li>
+                  <p>HTML</p>
+                  <svg
+                    class="circle-chart"
+                    viewBox="0 0 33.83098862 33.83098862"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="circle-chart__background"
+                      stroke="#3c3c3c"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart__circle"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-dasharray="90,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g class="circle-chart__info">
+                      <text
+                        class="circleTitle"
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="4.5"
+                        fill="#fff"
+                      >
+                        90%
+                      </text>
+                    </g>
+                  </svg>
+                </li>
+                <li>
+                  <p>CSS</p>
+                  <svg
+                    class="circle-chart"
+                    viewBox="0 0 33.83098862 33.83098862"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="circle-chart__background"
+                      stroke="#3c3c3c"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart__circle"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-dasharray="90,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g class="circle-chart__info">
+                      <text
+                        class="circleTitle"
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="4.5"
+                        fill="#fff"
+                      >
+                        90%
+                      </text>
+                    </g>
+                  </svg>
+                </li>
+                <li>
+                  <p>JS</p>
+                  <svg
+                    class="circle-chart"
+                    viewBox="0 0 33.83098862 33.83098862"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="circle-chart__background"
+                      stroke="#3c3c3c"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart__circle"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-dasharray="70,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g class="circle-chart__info">
+                      <text
+                        class="circleTitle"
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="4.5"
+                        fill="#fff"
+                      >
+                        65%
+                      </text>
+                    </g>
+                  </svg>
+                </li>
+                <li>
+                  <p>JQ</p>
+                  <svg
+                    class="circle-chart"
+                    viewBox="0 0 33.83098862 33.83098862"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="circle-chart__background"
+                      stroke="#3c3c3c"
+                      stroke-width="2"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <circle
+                      class="circle-chart__circle"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-dasharray="80,100"
+                      stroke-linecap="round"
+                      fill="none"
+                      cx="16.91549431"
+                      cy="16.91549431"
+                      r="15.91549431"
+                    ></circle>
+                    <g class="circle-chart__info">
+                      <text
+                        class="circleTitle"
+                        x="16.91549431"
+                        y="15.5"
+                        alignment-baseline="central"
+                        text-anchor="middle"
+                        font-size="4.5"
+                        fill="#fff"
+                      >
+                        80%
+                      </text>
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ---- skills (E) ---- -->
+          <!-- ---- project (S) ---- -->
+          <div class="section project">
+            <h3>Project</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+          <!-- ---- project (E) ---- -->
+          <div class="section contact"></div>
+        </div>
       </main>
+      <!-- --------- main (E) ---------- -->
+      <!-- --------- footer (S) ---------- -->
       <footer>
         <div class="inner"></div>
       </footer>
+      <!-- --------- footer (E) ---------- -->
     </div>
   </body>
 </html>

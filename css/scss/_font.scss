@@ -1,20 +1,41 @@
 @font-face {
-  font-family: "NanumSquareRound";
-  src: url(../../assets/font/NanumSquareRoundOTFL.otf) format("opentype");
+  font-family: "NanumSquare";
+  src: url(../../assets/font/NanumSquareOTF_acL.otf) format("opentype");
   font-weight: 300;
 }
 @font-face {
-  font-family: "NanumSquareRound";
-  src: url(../../assets/font/NanumSquareRoundOTFR.otf) format("opentype");
+  font-family: "NanumSquare";
+  src: url(../../assets/font/NanumSquareOTF_acR.otf) format("opentype");
   font-weight: 500;
 }
 @font-face {
-  font-family: "NanumSquareRound";
-  src: url(../../assets/font/NanumSquareRoundOTFB.otf) format("opentype");
+  font-family: "NanumSquare";
+  src: url(../../assets/font/NanumSquareOTF_acB.otf) format("opentype");
   font-weight: 700;
 }
 @font-face {
-  font-family: "NanumSquareRound";
-  src: url(../../assets/font/NanumSquareRoundOTFEB.otf) format("opentype");
+  font-family: "NanumSquare";
+  src: url(../../assets/font/NanumSquareOTF_acEB.otf) format("opentype");
   font-weight: 900;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/font/Poppins-Light.woff2) format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/font/Poppins-Regular.woff2) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/font/Poppins-Medium.woff2) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/font/Poppins-SemiBold.woff2) format("woff");
+  font-weight: 700;
 }
