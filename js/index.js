@@ -1,6 +1,8 @@
 $(function () {
   $(document).ready(function () {
     $("#fullpage").fullpage({
+      anchors: ["home", "about", "skills", "project", "contact"],
+      menu: "#menu",
       navigation: true,
       navigationPosition: "left",
       afterLoad: function (anchorLink, index) {

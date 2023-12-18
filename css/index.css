@@ -82,7 +82,7 @@ header .head_wrap .inner > ul {
   display: flex;
   gap: 60px;
 }
-header .head_wrap .inner > ul > li {
+header .head_wrap .inner > ul > li > a {
   display: flex;
   align-items: center;
   height: 100px;
@@ -92,22 +92,23 @@ header .head_wrap .inner > ul > li {
   transition: all 0.3s;
   cursor: pointer;
 }
-header .head_wrap .inner > ul > li:hover {
+header .head_wrap .inner > ul > li > a:hover {
   opacity: 0.5;
 }
-header .active {
+header > .active {
   background-color: #272e4e;
   border-color: #fff;
 }
-header .active .inner h1 > a {
+header > .active .inner h1 > a {
   color: #fff;
 }
-header .active .inner > ul > li {
+header > .active .inner > ul > li > a {
   color: #fff;
 }
 
 main {
   position: relative;
+  padding-top: 50px;
 }
 main .home {
   padding: 0 200px;
@@ -160,7 +161,7 @@ main .home .scroll_down {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: 150px;
+  bottom: 100px;
   font-size: 1.6rem;
   color: #fff;
   transform: translateX(-50%);
@@ -169,7 +170,7 @@ main .home .scroll_down::before {
   content: "";
   display: block;
   position: absolute;
-  top: 40px;
+  top: 8px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   width: 7px;
@@ -180,17 +181,17 @@ main .home .scroll_down::before {
 }
 @keyframes mouseScroll {
   0% {
-    top: 40px;
+    top: 80px;
   }
   100% {
-    top: 60px;
+    top: 100px;
   }
 }
 main .home .scroll_down::after {
   content: "";
   display: block;
   position: absolute;
-  top: 25px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   width: 30px;
@@ -213,7 +214,6 @@ main .about .about_box {
 }
 main .about .about_box .img_wrap {
   width: 40%;
-  height: 600px;
   border: 1px solid #3c3c3c;
   border-radius: 20px;
   background: url(../../assets/img/yunju.jpeg) no-repeat center/cover;
@@ -343,13 +343,12 @@ main .project .swiper .swiper-slide .left_box a {
   border-radius: 5px;
 }
 main .project .swiper .swiper-slide .img_wrap {
-  width: 800px;
-  height: 500px;
+  width: 55%;
   border-radius: 20px;
   overflow: hidden;
 }
 main .project .swiper .swiper-slide .img_wrap img {
-  width: 800px;
+  width: 100%;
 }
 main .project .swiper .swiper-pagination {
   padding-bottom: 10px;
@@ -385,6 +384,13 @@ main .contact .inner {
   height: 700px;
   padding: 100px;
   background-color: #272e4e;
+  border-radius: 10px;
+}
+main .contact .inner img {
+  width: 45%;
+}
+main .contact .inner .right {
+  position: relative;
 }
 main .contact .inner .right .num {
   margin-bottom: 50px;
@@ -396,7 +402,6 @@ main .contact .inner .right .num {
 }
 main .contact .inner .right .e-mail {
   display: block;
-  margin-bottom: 150px;
   padding: 40px 40px 40px 150px;
   font-size: 3.5rem;
   color: #fff;
@@ -404,12 +409,330 @@ main .contact .inner .right .e-mail {
   border-radius: 20px;
 }
 main .contact .inner .right .finish {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   font-size: 4rem;
   color: #fff;
-  text-align: end;
 }
 
 #fp-nav {
   background-color: #fff;
   border-radius: 50px;
+}
+
+@media only screen and (max-width: 2000px) {
+  header .head_wrap {
+    height: 81px;
+  }
+  header .head_wrap .inner h1 > a {
+    height: 80px;
+  }
+  header .head_wrap .inner > ul > li > a {
+    height: 80px;
+  }
+  main {
+    padding-top: 0;
+  }
+  main .home .inner h2 {
+    top: 220px;
+  }
+  main .home .inner h2 span {
+    font-size: 4rem;
+  }
+  main .home .inner h2 strong {
+    font-size: 13rem;
+  }
+  main .home .inner .txt_box p {
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+  }
+  main .about {
+    padding-top: 30px;
+  }
+  main .about h3 {
+    margin-bottom: 30px;
+    font-size: 4.5rem;
+  }
+  main .about .about_box .right > strong {
+    font-size: 3rem;
+  }
+  main .about .about_box .right > p {
+    font-size: 2rem;
+  }
+  main .project {
+    padding-top: 30px;
+  }
+  main .project h3 {
+    margin-bottom: 30px;
+    font-size: 4.5rem;
+  }
+  main .project .swiper .swiper-slide {
+    height: 600px;
+  }
+  main .contact {
+    padding-top: 30px;
+  }
+  main .contact h3 {
+    margin-bottom: 30px;
+    font-size: 4.5rem;
+  }
+  main .contact .inner {
+    height: 600px;
+  }
+  main .contact .inner .right .num {
+    margin-bottom: 40px;
+    padding: 30px 30px 30px 130px;
+    font-size: 3.5rem;
+    background-size: 80px;
+  }
+  main .contact .inner .right .e-mail {
+    margin-bottom: 40px;
+    padding: 30px 30px 30px 130px;
+    font-size: 3.5rem;
+    background-size: 80px;
+  }
+  main .contact .inner .right .finish {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  header .head_wrap {
+    padding: 0 150px;
+  }
+  main .home {
+    padding: 0 150px;
+  }
+  main .home .inner h2 span {
+    font-size: 3.5rem;
+  }
+  main .home .inner h2 strong {
+    font-size: 12rem;
+  }
+  main .home .inner h2 .name {
+    font-size: 2rem;
+  }
+  main .home .inner .txt_box p {
+    margin-bottom: 30px;
+    font-size: 1.65rem;
+    line-height: 32px;
+  }
+  main .about {
+    padding: 30px 150px 0;
+  }
+  main .about .about_box .right > strong {
+    font-size: 3rem;
+  }
+  main .about .about_box .right > p {
+    margin-bottom: 15px;
+  }
+  main .skills .inner h3 {
+    padding: 50px 150px;
+  }
+  main .skills .inner ul {
+    padding: 0 150px;
+  }
+  main .project {
+    padding: 30px 150px 0;
+  }
+  main .project .swiper .swiper-slide {
+    height: 600px;
+    padding: 0 100px;
+  }
+  main .project .swiper .swiper-slide .left_box strong {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+  }
+  main .project .swiper .swiper-slide .left_box p {
+    margin-bottom: 80px;
+    font-size: 1.7rem;
+  }
+  main .project .swiper .swiper-slide .left_box a {
+    width: 100px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  main .contact {
+    padding: 30px 150px 0;
+  }
+  main .contact .inner {
+    height: 600px;
+    padding: 60px;
+  }
+  main .contact .inner .right .num {
+    margin-bottom: 30px;
+    padding: 25px 25px 25px 110px;
+    font-size: 3rem;
+    background-size: 70px;
+  }
+  main .contact .inner .right .e-mail {
+    margin-bottom: 40px;
+    padding: 25px 25px 25px 110px;
+    font-size: 3rem;
+    background-size: 70px;
+  }
+  main .contact .inner .right .finish {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  header .head_wrap {
+    padding: 0 100px;
+  }
+  main .home {
+    padding: 0 100px;
+  }
+  main .home .inner .txt_box p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+  main .about {
+    padding: 30px 100px 0;
+  }
+  main .about .about_box .right > strong {
+    font-size: 2.5rem;
+  }
+  main .about .about_box .right > p {
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+  main .skills .inner h3 {
+    padding: 50px 100px;
+  }
+  main .skills .inner ul {
+    padding: 0 100px;
+  }
+  main .project {
+    padding: 30px 100px 0;
+  }
+  main .project .swiper .swiper-slide {
+    padding: 0 70px;
+  }
+  main .contact {
+    padding: 30px 100px 0;
+  }
+  main .contact .inner {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header .head_wrap {
+    height: 61px;
+    padding: 0 80px;
+  }
+  header .head_wrap .inner h1 > a {
+    height: 60px;
+    font-size: 2.3rem;
+  }
+  header .head_wrap .inner > ul > li > a {
+    height: 60px;
+    font-size: 1.3rem;
+  }
+  main .home {
+    padding: 0 80px;
+  }
+  main .home .inner h2 span {
+    font-size: 3rem;
+  }
+  main .home .inner h2 strong {
+    font-size: 10rem;
+  }
+  main .home .inner .txt_box p {
+    font-size: 1.3rem;
+    line-height: 28px;
+  }
+  main .home .scroll_down {
+    font-size: 1.2rem;
+  }
+  main .home .scroll_down::before {
+    width: 5px;
+    height: 5px;
+  }
+  main .home .scroll_down::after {
+    width: 20px;
+    height: 45px;
+  }
+  main .about {
+    padding: 30px 80px 0;
+  }
+  main .about h3 {
+    font-size: 3.3rem;
+  }
+  main .about .about_box .right > strong {
+    font-size: 2rem;
+  }
+  main .about .about_box .right > p {
+    font-size: 1.3rem;
+  }
+  main .skills .inner {
+    height: 400px;
+  }
+  main .skills .inner h3 {
+    padding: 50px 80px;
+    font-size: 3.3rem;
+  }
+  main .skills .inner ul {
+    padding: 0 80px;
+  }
+  main .skills .inner ul > li {
+    top: -50px;
+  }
+  main .skills .inner ul > li > p {
+    font-size: 3rem;
+  }
+  main .skills .inner ul > li .circle-chart {
+    width: 130px;
+    height: 130px;
+  }
+  main .project {
+    padding: 30px 80px 0;
+  }
+  main .project h3 {
+    font-size: 3.3rem;
+  }
+  main .project .swiper .swiper-slide .left_box strong {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  main .project .swiper .swiper-slide .left_box p {
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+  }
+  main .project .swiper .swiper-slide .left_box dl {
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  main .project .swiper .swiper-slide .left_box dl dt {
+    font-size: 1.5rem;
+  }
+  main .project .swiper .swiper-slide .left_box dl dd {
+    font-size: 1.3rem;
+  }
+  main .project .swiper .swiper-slide .left_box a {
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  main .contact {
+    padding: 30px 80px 0;
+  }
+  main .contact .inner {
+    padding: 40px;
+  }
+  main .contact .inner img {
+    width: 50%;
+  }
+  main .contact .inner .right .num {
+    font-size: 2rem;
+    background-size: 60px;
+  }
+  main .contact .inner .right .e-mail {
+    font-size: 2rem;
+    background-size: 60px;
+  }
+  main .contact .inner .right .finish {
+    font-size: 2.3rem;
+  }
 }
