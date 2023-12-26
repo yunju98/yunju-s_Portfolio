@@ -681,14 +681,14 @@ main{
         h1{
           >a{
             height: 60px;
-            font-size: 2.3rem;
+            font-size: 2.5rem;
           }
         }
         >ul{
           >li{
             >a{
               height: 60px;
-              font-size: 1.3rem;
+              font-size: 1.5rem;
             }
           }
         }
@@ -701,21 +701,21 @@ main{
       .inner{
         h2{
           span{
-            font-size: 3rem;
+            font-size: 3.2rem;
           }
           strong{
-            font-size: 10rem;
+            font-size: 10.2rem;
           }
         }
         .txt_box{
           p{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             line-height: 28px;
           }
         }
       }
       .scroll_down{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         &::before{
           width: 5px;
           height: 5px;
@@ -729,15 +729,15 @@ main{
     .about{
       padding: 30px 80px 0;
       h3{
-        font-size: 3.3rem;
+        font-size: 3.5rem;
       }
       .about_box{
         .right{
           >strong{
-            font-size: 2rem;
+            font-size: 2.2rem;
           }
           >p{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -747,14 +747,14 @@ main{
         height: 400px;
         h3{
           padding : 50px 80px;
-          font-size: 3.3rem;
+          font-size: 3.5rem;
         }
         ul{
           padding: 0 80px;
           >li{
             top: -50px;
             >p{
-              font-size: 3rem;
+              font-size: 3.2rem;
             }
             .circle-chart{
               width: 130px;
@@ -767,34 +767,34 @@ main{
     .project{
       padding: 30px 80px 0;
       h3{
-        font-size: 3.3rem;
+        font-size: 3.5rem;
       }
       .swiper{
         .swiper-slide{
           .left_box{
             strong{
               margin-bottom: 20px;
-              font-size: 2.5rem;
+              font-size: 2.7rem;
             }
             p{
               margin-bottom: 40px;
-              font-size: 1.3rem;
+              font-size: 1.5rem;
             }
             dl{
               margin-bottom: 10px;
               gap: 10px;
               dt{
-                font-size: 1.5rem;
+                font-size: 1.7rem;
               }
               dd{
-                font-size: 1.3rem;
+                font-size: 1.5rem;
               }
             }
             a{
               width: 60px;
               height: 30px;
               margin-top: 20px;
-              font-size: 1.1rem;
+              font-size: 1.5rem;
             }
           }
         }
@@ -809,15 +809,15 @@ main{
         }
         .right{
           .num{
-            font-size: 2rem;
+            font-size: 2.2rem;
             background-size: 60px;
           }
           .e-mail{
-            font-size: 2rem;
+            font-size: 2.2rem;
             background-size: 60px;
           }
           .finish{
-            font-size: 2.3rem;
+            font-size: 2.5rem;
           }
         }
       }
@@ -827,70 +827,9 @@ main{
 // ---------------- 1200px (E) ------------------
 // ---------------- 1024px (S) ------------------
 @media only screen and (max-width:1024px){
-  main{
-    .home{
-      .inner{
-        .txt_box{
-          width: 100%;
-        }
-      }
-    }
-    .project{
-      .swiper{
-        .swiper-slide{
-          .left_box{
-            position: absolute;
-            left: 50%;
-            bottom: 40px;
-            transform: translateX(-50%);  
-            strong{
-              margin-bottom: 20px;
-            }
-            p{
-              margin-bottom: 30px;
-            }
-            dl{
-              margin-bottom: 20px;
-            }
-            a{
-              position: relative;
-              left: 50%;
-              margin: 40px 0 20px;
-              transform: translateX(-50%); 
-            }
-          }
-          .img_wrap{
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-        }
-      }
-    }
-    .contact{
-      .inner{
-        flex-direction: column;
-        justify-content: flex-start;
-        img{
-          height: 50%;
-        }
-        .right{
-          padding-top: 30px;
-          .finish{
-            left: 0;
-            bottom: -20px;
-          }
-        }
-      }
-    }
-  }
-}
-// ---------------- 1024px (E) ------------------
-// ---------------- 800px (S) ------------------
-@media only screen and (max-width:800px){
   header{
     .head_wrap{
+      padding: 0 20px;
       .inner{
         ul{
           flex-direction: column;
@@ -898,7 +837,7 @@ main{
           position: absolute;
           top: 60px;
           right: 0;
-          padding: 0 30px;
+          padding: 0 20px;
           background-color: #fff;
           border: 1px solid #000;
           transition: all .5s;
@@ -954,8 +893,18 @@ main{
   }
   main{
     .home{
+      padding: 30px 20px 20px;
+      margin-bottom: 50px;
       .inner{
+        position: static;
+        padding-top: 20px;
+        h2{
+          position: static;
+          margin-bottom: 100px;
+        }
         .txt_box{
+          position: static;
+          width: 100%;
           p{
             text-align: left;
           }
@@ -966,6 +915,8 @@ main{
       }
     }
     .about{
+      padding: 30px 20px 0;
+      margin-bottom: 50px;
       .about_box{
         flex-direction: column;
         align-items: center;
@@ -986,40 +937,177 @@ main{
       }
     }
     .skills{
+      margin-bottom: 50px;
       .inner{
-        height: 700px;
+        h3{
+          padding: 40px 20px;
+        }
         ul{
-          flex-wrap: wrap;
-          gap: 80px;
-          >li{
-            .circle-chart{
-              width: 180px;
-              height: 180px;
+          padding: 0 20px;
+        }
+      }
+    }
+    .project{
+      margin-bottom: 50px;
+      padding: 0 20px;
+      .swiper{
+        .swiper-slide{
+          flex-direction: column-reverse;
+          padding: 20px 0;
+          .left_box{
+            strong{
+              margin-bottom: 20px;
+            }
+            p{
+              margin-bottom: 30px;
+            }
+            dl{
+              margin-bottom: 20px;
+            }
+            a{
+              position: relative;
+              left: 50%;
+              margin: 30px 0 25px;
+              transform: translateX(-50%); 
             }
           }
         }
       }
     }
-
     .contact{
+      margin-bottom: 50px;
+      padding: 0 20px;
       .inner{
+        flex-direction: column;
+        justify-content: flex-start;
         img{
-          width: 80%;
+          width: 50%;
           height: 50%;
+        }
+        .right{
+          padding-top: 30px;
+          .finish{
+            left: 0;
+            bottom: -20px;
+          }
         }
       }
     }
   }
 }
-// ---------------- 800px (E) ------------------
+// ---------------- 1024px (E) ------------------
 // ---------------- 640px (S) ------------------
 @media only screen and (max-width:640px){
   main{
+    .fp-section{
+      height: auto !important;
+      .fp-tableCell{
+        height: auto !important;
+      }
+    }
+    .home{
+      .inner{
+        h2{
+          margin-bottom: 30px;
+          span{
+            font-size: 2.2rem;
+          }
+          strong{
+            font-size: 5.2rem;
+            line-height: 0;
+          }
+        }
+        .txt_box{
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .about{
+      h3{
+        font-size: 2.5rem;
+      }
+      .about_box{
+        .img_wrap{
+          width: 90%;
+        }
+        .right{
+          >strong{
+            font-size: 1.7rem;
+          }
+          >p{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .skills{
+      .inner{
+        height: auto;
+        h3{
+        font-size: 2.5rem;
+        }
+        ul{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 80px;
+          >li{
+            .circle-chart{
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
     .project{
+      h3{
+        font-size: 2.5rem;
+      }
       .swiper{
+        height: auto;
         .swiper-slide{
+          justify-content: space-around;
+          .left_box{
+            padding: 0 20px;
+          }
           .img_wrap{
             width: 75%;
+          }
+        }
+        .swiper-button-next{
+          display: none;
+        }
+        .swiper-button-prev{
+          display: none;
+        }
+      }
+    }
+    .contact{
+      h3{
+        font-size: 2.5rem;
+      }
+      .inner{
+        height: auto;
+        padding: 20px;
+        img{
+          width: 100%
+        }
+        .right{
+          .num{
+            padding: 10px 10px 10px 40px;
+            font-size: 1.2rem;
+            background-size: 25px;
+          }
+          .e-mail{
+            padding: 10px 10px 10px 40px;
+            font-size: 1.2rem;
+            background-size: 25px;
+          }
+          .finish{
+            bottom: 5px;
+            font-size: 1.5rem;
           }
         }
       }

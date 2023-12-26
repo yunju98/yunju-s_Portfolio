@@ -5,6 +5,7 @@ $(function () {
       menu: "#menu",
       navigation: true,
       navigationPosition: "left",
+      responsiveWidth: 640,
       afterLoad: function (anchorLink, index) {
         if (index === 1) {
           $(".head_wrap").addClass("active");
