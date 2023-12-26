@@ -184,7 +184,7 @@ main{
         width: 40%;
         border: 1px solid #3c3c3c;
         border-radius: 20px;
-        background: url(../../assets/img/yunju.jpeg) no-repeat center/cover;
+        background: url(../assets/img/yunju.jpeg) no-repeat center/cover;
       }
       .right{
         display: flex;
@@ -375,7 +375,7 @@ main{
           padding: 30px 30px 30px 150px;
           font-size: 4rem;
           color: #fff;
-          background: #3b4676 url(../../assets/img/icons8-핸드폰-100.png)no-repeat left 10px center/100px;
+          background: #3b4676 url(../assets/img/icons8-핸드폰-100.png)no-repeat left 10px center/100px;
           border-radius: 20px;
         }
         .e-mail{
@@ -383,7 +383,7 @@ main{
           padding: 40px 40px 40px 150px;
           font-size: 3.5rem;
           color: #fff;
-          background: #3b4676 url(../../assets/img/icons8-이메일-100.png)no-repeat left 10px center/100px;
+          background: #3b4676 url(../assets/img/icons8-이메일-100.png)no-repeat left 10px center/100px;
           border-radius: 20px;
         }
         .finish{
@@ -791,10 +791,10 @@ main{
               }
             }
             a{
-              width: 60px;
-              height: 30px;
+              width: 80px;
+              height: 40px;
               margin-top: 20px;
-              font-size: 1.5rem;
+              font-size: 2rem;
             }
           }
         }
@@ -1013,7 +1013,7 @@ main{
             font-size: 2.2rem;
           }
           strong{
-            font-size: 5.2rem;
+            font-size: 4.7rem;
             line-height: 0;
           }
         }
@@ -1053,6 +1053,9 @@ main{
           grid-template-columns: repeat(2, 1fr);
           gap: 80px;
           >li{
+            p{
+              font-size: 2.5rem;
+            }
             .circle-chart{
               width: 100px;
               height: 100px;
@@ -1071,9 +1074,13 @@ main{
           justify-content: space-around;
           .left_box{
             padding: 0 20px;
+            strong{
+              font-size: 2rem;
+            }
           }
           .img_wrap{
-            width: 75%;
+            width: 90%;
+            margin-bottom: 20px;
           }
         }
         .swiper-button-next{
@@ -1096,6 +1103,7 @@ main{
         }
         .right{
           .num{
+            margin-bottom: 10px;
             padding: 10px 10px 10px 40px;
             font-size: 1.2rem;
             background-size: 25px;

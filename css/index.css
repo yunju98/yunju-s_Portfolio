@@ -220,7 +220,7 @@ main .about .about_box .img_wrap {
   width: 40%;
   border: 1px solid #3c3c3c;
   border-radius: 20px;
-  background: url(../../assets/img/yunju.jpeg) no-repeat center/cover;
+  background: url(../assets/img/yunju.jpeg) no-repeat center/cover;
 }
 main .about .about_box .right {
   display: flex;
@@ -402,7 +402,7 @@ main .contact .inner .right .num {
   padding: 30px 30px 30px 150px;
   font-size: 4rem;
   color: #fff;
-  background: #3b4676 url(../../assets/img/icons8-핸드폰-100.png) no-repeat left 10px center/100px;
+  background: #3b4676 url(../assets/img/icons8-핸드폰-100.png) no-repeat left 10px center/100px;
   border-radius: 20px;
 }
 main .contact .inner .right .e-mail {
@@ -410,7 +410,7 @@ main .contact .inner .right .e-mail {
   padding: 40px 40px 40px 150px;
   font-size: 3.5rem;
   color: #fff;
-  background: #3b4676 url(../../assets/img/icons8-이메일-100.png) no-repeat left 10px center/100px;
+  background: #3b4676 url(../assets/img/icons8-이메일-100.png) no-repeat left 10px center/100px;
   border-radius: 20px;
 }
 main .contact .inner .right .finish {
@@ -715,10 +715,10 @@ main .contact .inner .right .finish {
     font-size: 1.5rem;
   }
   main .project .swiper .swiper-slide .left_box a {
-    width: 60px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main .contact {
     padding: 30px 80px 0;
@@ -906,7 +906,7 @@ main .contact .inner .right .finish {
     font-size: 2.2rem;
   }
   main .home .inner h2 strong {
-    font-size: 5.2rem;
+    font-size: 4.7rem;
     line-height: 0;
   }
   main .home .inner .txt_box p {
@@ -935,6 +935,9 @@ main .contact .inner .right .finish {
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
+  main .skills .inner ul > li p {
+    font-size: 2.5rem;
+  }
   main .skills .inner ul > li .circle-chart {
     width: 100px;
     height: 100px;
@@ -951,8 +954,12 @@ main .contact .inner .right .finish {
   main .project .swiper .swiper-slide .left_box {
     padding: 0 20px;
   }
+  main .project .swiper .swiper-slide .left_box strong {
+    font-size: 2rem;
+  }
   main .project .swiper .swiper-slide .img_wrap {
-    width: 75%;
+    width: 90%;
+    margin-bottom: 20px;
   }
   main .project .swiper .swiper-button-next {
     display: none;
@@ -971,6 +978,7 @@ main .contact .inner .right .finish {
     width: 100%;
   }
   main .contact .inner .right .num {
+    margin-bottom: 10px;
     padding: 10px 10px 10px 40px;
     font-size: 1.2rem;
     background-size: 25px;
