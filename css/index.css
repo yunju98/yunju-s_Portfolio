@@ -911,6 +911,7 @@ main .contact .inner .right .finish {
   }
   main .home .inner .txt_box p {
     font-size: 1.2rem;
+    line-height: 25px;
   }
   main .about h3 {
     font-size: 2.5rem;
@@ -923,6 +924,7 @@ main .contact .inner .right .finish {
   }
   main .about .about_box .right > p {
     font-size: 1.3rem;
+    line-height: 25px;
   }
   main .skills .inner {
     height: auto;
